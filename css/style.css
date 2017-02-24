@@ -2,6 +2,10 @@ body {
 	margin: 0;
 	padding: 0;
 }
+section {
+	background-color: #E6E5DC;
+	overflow: hidden;
+}
 header {
 	position: relative;
 	min-height: 70px;
@@ -9,17 +13,41 @@ header {
 }
 .logo {
 	position: absolute;
-	top:0px;
-	left:0px;
-	width: 30%;
+	float: left;
 }
 .navigation {
 	position: absolute;
-	right: 0px;
-	bottom: 0px;
-	width: 70%;
+	bottom: 0;
+	right: 0;
 }
-.nav-item {
-	border-left: 1px solid;
-	border-color: #4d4d42;
+.module {
+	background-color: #ffffff;
+}
+.module-padding {
+	padding:10px;
+}
+.module-header {
+	position: relative;
+	overflow: hidden;
+}
+.module-header h3{
+	float: left;
+}
+.module-header img {
+	float: right;
+}
+.module-graph img {
+	margin: auto;
+}
+.module-description {
+	background-color: #E6E5DC;
+	overflow:	hidden;
+}
+.module-description div{
+	float:left;
+	width: 33.33%;
+}
+
+.content {
+	position: relative;
 }
