@@ -1,0 +1,25 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+header {
+	position: relative;
+	min-height: 70px;
+	background-color: #FCFCFC;
+}
+.logo {
+	position: absolute;
+	top:0px;
+	left:0px;
+	width: 30%;
+}
+.navigation {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 70%;
+}
+.nav-item {
+	border-left: 1px solid;
+	border-color: #4d4d42;
+}
