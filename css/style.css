@@ -22,9 +22,10 @@ header {
 }
 .module {
 	background-color: #ffffff;
+	padding: 10px;
 }
-.module-padding {
-	padding:10px;
+.module-area {
+	padding:20px;
 }
 .module-header {
 	position: relative;
@@ -40,7 +41,7 @@ header {
 	margin: auto;
 }
 .module-description {
-	background-color: #E6E5DC;
+	background-color: #FBFBF6;
 	overflow:	hidden;
 }
 .module-description div{
@@ -48,6 +49,3 @@ header {
 	width: 33.33%;
 }
 
-.content {
-	position: relative;
-}

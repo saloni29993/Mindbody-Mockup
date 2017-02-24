@@ -1,4 +1,5 @@
-$("ul.nav-tabs a").click(function (e) {
-  e.preventDefault();  
-    $(this).tab('show');
+$('.nav.navbar-nav > li').on('click', function (e) {
+    e.preventDefault();
+    $('.nav.navbar-nav > li').removeClass('active');
+    $(this).addClass('active');
 });

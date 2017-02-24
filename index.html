@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript" href="js/script.js"></script>
 </head>
 
 <body>
@@ -17,72 +15,59 @@
         <img src="assets/logo.png">
       </a>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 navigation tabbable">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 navigation" id="navigation">
       <ul class="nav nav-tabs navbar-right">
           <li class="nav-item active">
-            <a class="nav-link" href="#set1">Dashboard</a>
+            <a class="nav-link" data-toggle="tab" href="#set1">Dashboard</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sign In</a>
+            <a class="nav-link" data-toggle="tab" href="#set2">Sign In</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Classes</a>
+            <a class="nav-link" data-toggle="tab" href="#">Classes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Workshops</a>
+            <a class="nav-link" data-toggle="tab" href="#">Workshops</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Appointments</a>
+            <a class="nav-link" data-toggle="tab" href="#">Appointments</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Client Home</a>
+            <a class="nav-link" data-toggle="tab" href="#">Client Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Retail</a>
+            <a class="nav-link" data-toggle="tab" href="#">Retail</a>
           </li>
         </ul>
     </div>
 </header>
-<!-- <div class="tab-content" style="clear: both;">
-          <div class="tab-pane" id="set1">
-              <div class="tabbable">
-                  <ul class="nav nav-tabs">
-                      <li class="active"><a href="#">PopularAll</a></li>
-                      <li><a href="#">UniqueAll</a></li>
-                  </ul>
-              </div>
-          </div>
-        </div>
- -->
-<section class="col-lg-12 col-md-12 content">
+
+<div class="sub-navigation">
+  <div class="nav navbar navbar-primary">
+      <ul class="nav navbar-nav sub-nav-list" id="set1">
+          <li class="active"><a href="#">Dashboard</a></li>
+          <li><a href="#">Business Overview</a></li>
+          <li><a href="#">Schedule</a></li>
+          <li><a href="#">Reports</a></li>
+      </ul>
+      <ul class="nav navbar-nav sub-nav-list" id="set2">
+          <li class="active"><a href="#">Dashboard2</a></li>
+          <li><a href="#">Business Overview2</a></li>
+          <li><a href="#">Schedule2</a></li>
+          <li><a href="#">Reports2</a></li>
+      </ul>
+  </div>
+</div>
+
+<section class="col-lg-12 col-md-12 content-area">
   <div class="new-module col-sm-12 col-md-3 col-lg-3">
       <img src="assets/plus_icon.png" alt="">
   </div>
 
-  <article class="col-sm-12 col-md-3 col-lg-3">
-    <div class="module">
-      <div class="module-header module-padding">
-        <h3>Yoga Classes</h3>
-        <img src="assets/pencil_icons.png">
-      </div>
-      <div class="module-body module-padding">
-        <div class="module-graph module-padding">
-          <p>Sales by month</p>
-          <img src="assets/graph.png" alt="...">
-        </div>
-        <div class="module-description module-padding">
-          <div>Total Monthly Sales</div>
-          <div>Current<br><strong>$23483</strong></div>
-          <div><p>1-year</p><img src="assets/spark_line.png"></div>
-        </div>
-        <div class="module-more module-padding">More..</div>
-      </div>
-    </div>
-  </article>
-
-  <article class="col-sm-12 col-md-3 col-lg-3">
-    <div class="module">
-      <div class="module-header">
+  <article>
+    <div class="module-area col-sm-12 col-md-3 col-lg-3">
+      <div class="module">
+        <div class="module-header">
         <h3>Yoga Classes</h3>
         <img src="assets/pencil_icons.png">
       </div>
@@ -98,12 +83,14 @@
         </div>
         <div class="module-more">More..</div>
       </div>
+      </div>  
     </div>
   </article>
 
-  <article class="col-sm-12 col-md-3 col-lg-3">
-    <div class="module">
-      <div class="module-header">
+  <article>
+    <div class="module-area col-sm-12 col-md-3 col-lg-3">
+      <div class="module">
+        <div class="module-header">
         <h3>Yoga Classes</h3>
         <img src="assets/pencil_icons.png">
       </div>
@@ -119,10 +106,68 @@
         </div>
         <div class="module-more">More..</div>
       </div>
+      </div>  
     </div>
   </article>
+
+  <article>
+    <div class="module-area col-sm-12 col-md-3 col-lg-3">
+      <div class="module">
+        <div class="module-header">
+        <h3>Yoga Classes</h3>
+        <img src="assets/pencil_icons.png">
+      </div>
+      <div class="module-body">
+        <div class="module-graph">
+          <p>Sales by month</p>
+          <img src="assets/graph.png" alt="...">
+        </div>
+        <div class="module-description">
+          <div>Total Monthly Sales</div>
+          <div>Current<br><strong>$23483</strong></div>
+          <div><p>1-year</p><img src="assets/spark_line.png"></div>
+        </div>
+        <div class="module-more">More..</div>
+      </div>
+      </div>  
+    </div>
+  </article>
+
+  <div class="col-md-push-3 col-lg-push-3 col-md-12 col-lg-12 table-condensed">
+   <table class="table">
+   <colgroup>
+      <col class="col-md-1">
+      <col class="col-md-1">
+      <col class="col-md-10">
+    </colgroup>  
+    <thead>
+       <tr>
+          <th>All Programs</th>
+          <th>Monthly Sales</th>
+          <th>Monthly Attendance</th>
+       </tr>
+    </thead>
+    
+    <tbody>
+       <tr>
+          <td>Open Practise</td>
+          <td>$572.00</td>
+          <td>276 visits</td>
+       </tr>  
+       <tr>
+          <td>Yoga Videos</td>
+          <td>#391.00</td>
+          <td>82 views</td>
+       </tr>
+      </tbody>
+   </table>
+  </div>
 </section>
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.js">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
 </body>
 </html>
