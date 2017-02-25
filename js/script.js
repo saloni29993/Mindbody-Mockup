@@ -11,10 +11,8 @@ $(document).ready(function () {
         $(".module-more").text(txt);
         $(this).next('.module-extended').slideToggle(200);
     });
-});
 
-$(document).ready(function(){
-$(".module-new").click(function(){
+    $(".module-new").click(function(){
     $("#newprogmodal").modal('show');
-});
+	});
 });

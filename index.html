@@ -66,6 +66,7 @@
     <button class="btn btn-success btn-lg module-new-prog" data-toggle="modal" data-target="newprogmodal">
       <img src="assets/plus_icon.png" alt="">
     </button>  
+    <p><strong>New Program</strong></p>
   </div>
 
   <div class="col-md-10 col-lg-10">
@@ -180,36 +181,39 @@
     <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title">Add New Program</h4>
+          <h4 class="modal-title">Add a New Program</h4>
         </div>
 
         <div class="modal-body">
-          <div class="form-group">
+          <fieldset class="form-group">
             <label for="formtitle">Program Title</label>
             <input type="text" class="form-control" id="formtitle" placeholder="Program Title" required>
-          </div>
-          <div class="form-group">
+          </fieldset>
+          <fieldset class="form-group">
             <label for="formtype">Program Type</label>
-            <select class="form-control" id="formtype" required>
-            <option value="" disabled selected>Program Type</option>
-            <option value="Count Series">Count Series</option>
-            <option value="Time Series">Time Series</option>
-            <option value="Membership">Membership</option>
-          </select>
-          </div>
-          <div class="form-group">
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="program-type" id="countseries" value="countseries" checked> Count Series
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="program-type" id="timeseries" value="timeseries"> Time Series
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="program-type" id="membership" value="membership"> Membership
+            </div>
+          </fieldset>
+          <fieldset class="form-group">
             <div class="checkbox">
                 <label for="formscheduling">
                   <input type="checkbox" id="formscheduling" > Allow Online Scheduling?
                 </label>
             </div>
-          </div>
-          <div class="form-group">
+          </fieldset>
+          <fieldset class="form-group">
               <label for="formtitle">Default Capacity</label>
               <input type="number" class="form-control" id="formcapacity" placeholder="Default Capacity" required>
-          </div>
-          <div class="form-group">
-            <label for="formtype">Tabs</label>
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="formtype">Which of the following tabs is this program on?</label>
             <select class="form-control multi" id="formtabs" multiple required>
               <option value="Classes">Classes</option>
               <option value="Appointments">Appointments</option>
@@ -218,12 +222,11 @@
               <option value="Inside">Inside</option>
               <option value="Gym">Gym</option>
             </select>
-          </div>
+          </fieldset>
         </div>
-
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+          <button type="button" class="btn btn-success btn-save" data-dismiss="modal">Save changes</button>
         </div>
     </div>
   </div>
