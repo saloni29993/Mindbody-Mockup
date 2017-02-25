@@ -11,6 +11,7 @@ header {
 	min-height: 70px;
 	background-color: #FCFCFC;
 }
+
 .container {
 	background-color: #E6E5DC !important;
 }
@@ -22,6 +23,11 @@ header {
 	position: absolute;
 	bottom: 0;
 	right: 0;
+}
+.navigation ul li {
+	border-right: 1px solid #E0E0E0;
+	border-radius: 3px 3px 0px 0px;
+	list-style: none;
 }
 .module-new {
 	padding: 20px;
@@ -54,11 +60,10 @@ button.module-new-prog {
 }
 .module-description {
 	background-color: #FBFBF6;
-	overflow:	hidden;
+	font-weight: 300;
 }
-.module-description div{
-	float:left;
-	width: 33.33%;
+.module-description td{
+	padding-right: 10px;
 }
 .module-extended {
 	display: none;
