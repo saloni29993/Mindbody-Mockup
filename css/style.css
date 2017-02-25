@@ -11,6 +11,9 @@ header {
 	min-height: 70px;
 	background-color: #FCFCFC;
 }
+.container {
+	background-color: #E6E5DC !important;
+}
 .logo {
 	position: absolute;
 	float: left;
@@ -19,6 +22,12 @@ header {
 	position: absolute;
 	bottom: 0;
 	right: 0;
+}
+.module-new {
+	padding: 20px;
+}
+.module-new-program {
+	background-color: #B1D096;
 }
 .module {
 	background-color: #ffffff;
@@ -47,5 +56,11 @@ header {
 .module-description div{
 	float:left;
 	width: 33.33%;
+}
+.module-extended {
+	display: none;
+}
+.module-more {
+	cursor: pointer;
 }
 

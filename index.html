@@ -59,13 +59,18 @@
   </div>
 </div>
 
+<div class="container">
+<div class="row">
 <section class="col-lg-12 col-md-12 content-area">
-  <div class="new-module col-sm-12 col-md-3 col-lg-3">
+  <div class="module-new col-sm-12 col-md-2 col-lg-2">
+    <button class="btn btn-success btn-lg module-new-prog" data-toggle="modal" data-target="newprogmodal">
       <img src="assets/plus_icon.png" alt="">
+    </button>  
   </div>
 
+  <div class="col-md-10 col-lg-10">
   <article>
-    <div class="module-area col-sm-12 col-md-3 col-lg-3">
+    <div class="module-area col-sm-12 col-md-4 col-lg-4">
       <div class="module">
         <div class="module-header">
         <h3>Yoga Classes</h3>
@@ -88,7 +93,7 @@
   </article>
 
   <article>
-    <div class="module-area col-sm-12 col-md-3 col-lg-3">
+    <div class="module-area col-sm-12 col-md-4 col-lg-4">
       <div class="module">
         <div class="module-header">
         <h3>Yoga Classes</h3>
@@ -111,7 +116,7 @@
   </article>
 
   <article>
-    <div class="module-area col-sm-12 col-md-3 col-lg-3">
+    <div class="module-area col-sm-12 col-md-4 col-lg-4">
       <div class="module">
         <div class="module-header">
         <h3>Yoga Classes</h3>
@@ -128,12 +133,16 @@
           <div><p>1-year</p><img src="assets/spark_line.png"></div>
         </div>
         <div class="module-more">More..</div>
+        <div class="module-extended">
+          kldfjksdvhfvgdbhxjnzkmjfffffxzl,xmcnvbhfslgdcnz,m thj
+        </div>
       </div>
       </div>  
     </div>
   </article>
+  </div>
 
-  <div class="col-md-push-3 col-lg-push-3 col-md-12 col-lg-12 table-condensed">
+  <div class="col-md-push-2 col-lg-push-2 col-md-12 col-lg-12 table-condensed">
    <table class="table">
    <colgroup>
       <col class="col-md-1">
@@ -163,6 +172,62 @@
    </table>
   </div>
 </section>
+</div>
+</div>
+
+<div class="modal fade" id="newprogmodal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Add New Program</h4>
+        </div>
+
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="formtitle">Program Title</label>
+            <input type="text" class="form-control" id="formtitle" placeholder="Program Title" required>
+          </div>
+          <div class="form-group">
+            <label for="formtype">Program Type</label>
+            <select class="form-control" id="formtype" required>
+            <option value="" disabled selected>Program Type</option>
+            <option value="Count Series">Count Series</option>
+            <option value="Time Series">Time Series</option>
+            <option value="Membership">Membership</option>
+          </select>
+          </div>
+          <div class="form-group">
+            <div class="checkbox">
+                <label for="formscheduling">
+                  <input type="checkbox" id="formscheduling" > Allow Online Scheduling?
+                </label>
+            </div>
+          </div>
+          <div class="form-group">
+              <label for="formtitle">Default Capacity</label>
+              <input type="number" class="form-control" id="formcapacity" placeholder="Default Capacity" required>
+          </div>
+          <div class="form-group">
+            <label for="formtype">Tabs</label>
+            <select class="form-control multi" id="formtabs" multiple required>
+              <option value="Classes">Classes</option>
+              <option value="Appointments">Appointments</option>
+              <option value="Workshops">Workshops</option>
+              <option value="Outside">Outside</option>
+              <option value="Inside">Inside</option>
+              <option value="Gym">Gym</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+        </div>
+    </div>
+  </div>
+</div>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.js">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
