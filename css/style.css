@@ -2,7 +2,8 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: Helvetica;
-	background-color: #E6E5DC
+	font-size: 12px;
+	background-color: #E6E5DC;
 }
 section {
 	background-color: #E6E5DC;
@@ -13,6 +14,58 @@ header {
 	min-height: 70px;
 	background-color: #FCFCFC;
 }
+
+@media only screen and (max-width:480px) {
+	.module-section, .module-new-section {
+		width: 100%;
+	}
+
+	.module {
+		width: 100% !important;
+	}
+	button.module-new-prog {
+		width: 100% !important;
+	}
+	.navigation {
+		position: static !important;
+	}
+	.navbar-nav {
+		margin: 75px 5px 0px 5px;
+	}
+	.nav-item {
+		border: 1px solid grey !important;
+    	background: #ffffff;
+	}
+}
+@media screen and (min-width: 601px) and (max-width: 899px) {
+	.module-new-section {
+		width: 100%;
+		padding: 10px !important;
+	}
+	.module-new-section p {
+		margin-top: 10px;
+	}
+	.module-section  {
+		padding: 0px 10px 10px 10px;
+	}
+	.module {
+		width: 45% !important;
+	}
+	button.module-new-prog {
+		width: 100% !important;
+	}
+	.navigation {
+		position: static !important;
+	}
+	.navbar-nav {
+		margin: 75px 5px 0px 5px;
+	}
+	.nav-item {
+		border: 1px solid grey;
+    	background: #ffffff;
+	}
+}
+
 .logo {
 	position: absolute;
 	float: left;
@@ -22,6 +75,9 @@ header {
 	bottom: 0;
 	right: 0;
 }
+#sub-navigation {
+	background: #ffffff;
+}
 .nav-link {
 	margin-right: 0px !important;
 	border: none;
@@ -29,10 +85,12 @@ header {
 	font-weight: 600;
 }
 .nav-item {
-	border: 1px solid;
+	border: 1px solid #000000;
+	border-right: none;
 }
 .nav-item .active  {
 	color: #000000;
+	border-radius: 5px;
 }
 .sub-nav-item a {
 	color: #000000;
@@ -44,10 +102,10 @@ li.active {
 .table {
 	margin: 10px;
 }
-.navbar-toggle {
+/*.navbar-toggle {
 	border-color: #000000;
 }
-
+*/
 /*Modal Section*/
 .module-new-section {
 	padding: 20px;
@@ -79,11 +137,12 @@ button.module-new-prog {
 	position: relative;
 	overflow: hidden;
 }
-.module-header h3{
+.module-header .mhead{
 	float: left;
 }
-.module-header a {
+.module-header .mpencil {
 	float: right;
+	margin: 6px;
 }
 
 .module-graph {
@@ -123,6 +182,9 @@ button.module-new-prog {
     line-height: 17px;
     background: url('assets/pencil_icons.png');
     background-position: 0px 17px;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid grey;
 }
 
 .pencil-sprite:hover {

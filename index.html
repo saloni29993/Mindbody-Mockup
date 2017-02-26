@@ -15,11 +15,18 @@
         <img src="assets/logo.png">
       </a>
     </div>
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
     </button>
+
+   <!--  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>  
+      <span class="icon-bar"></span>
+    </button> -->
+
     <div class="navigation collapse navbar-collapse" id="navigation">
       <ul class="nav navbar-nav navbar-right">
           <li class="nav-item active">
@@ -48,44 +55,40 @@
 </header> 
 
 <!--Start of Sub-navigation section-->
-<div class="container">
-  <div class="row">
-    <div id="sub-navigation" style="background-color: #ffffff">
-      <div class="nav navbar navbar-primary">
-          <ul class="nav navbar-nav sub-nav-list" id="set1">
-              <li class="sub-nav-item active"><a href="#">Dashboard</a></li>
-              <li class="sub-nav-item"><a href="#">Business Overview</a></li>
-              <li class="sub-nav-item"><a href="#">Schedule</a></li>
-              <li class="sub-nav-item"><a href="#">Reports</a></li>
-          </ul>
-          <ul class="nav navbar-nav sub-nav-list" id="set2">
-              <li class="sub-nav-item active"><a href="#">Link</a></li>
-              <li class="sub-nav-item"><a href="#">Link</a></li>
-              <li class="sub-nav-item"><a href="#">Link</a></li>
-              <li class="sub-nav-item"><a href="#">Link</a></li>
-          </ul>
-          <ul class="nav navbar-nav sub-nav-list" id="set3">
-              <li class="sub-nav-item active"><a href="#">Link</a></li>
-              <li class="sub-nav-item"><a href="#">Link</a></li>
-          </ul>
-          <ul class="nav navbar-nav sub-nav-list" id="set4">
-              <li class="sub-nav-item active"><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-          </ul>
-          <ul class="nav navbar-nav sub-nav-list" id="set5">
-              <li class="sub-nav-item active"><a href="#">Link</a></li>
-              <li class="sub-nav-item"><a href="#">Link</a></li>
-          </ul>
-          <ul class="nav navbar-nav sub-nav-list" id="set6">
-              <li class="sub-nav-item active"><a href="#">Link</a></li>
-              <li class="sub-nav-item"><a href="#">Link</a></li>
-          </ul>
-          <ul class="nav navbar-nav sub-nav-list" id="set7">
-              <li class="sub-nav-item active"><a href="#">Link</a></li>
-              <li class="sub-nav-item"><a href="#">Link</a></li>
-          </ul>
-      </div>
-    </div>
+<div id="sub-navigation">
+  <div class="nav navbar navbar-primary">
+      <ul class="nav navbar-nav sub-nav-list" id="set1">
+          <li class="sub-nav-item active"><a href="#">Dashboard</a></li>
+          <li class="sub-nav-item"><a href="#">Business Overview</a></li>
+          <li class="sub-nav-item"><a href="#">Schedule</a></li>
+          <li class="sub-nav-item"><a href="#">Reports</a></li>
+      </ul>
+      <ul class="nav navbar-nav sub-nav-list" id="set2">
+          <li class="sub-nav-item active"><a href="#">Link</a></li>
+          <li class="sub-nav-item"><a href="#">Link</a></li>
+          <li class="sub-nav-item"><a href="#">Link</a></li>
+          <li class="sub-nav-item"><a href="#">Link</a></li>
+      </ul>
+      <ul class="nav navbar-nav sub-nav-list" id="set3">
+          <li class="sub-nav-item active"><a href="#">Link</a></li>
+          <li class="sub-nav-item"><a href="#">Link</a></li>
+      </ul>
+      <ul class="nav navbar-nav sub-nav-list" id="set4">
+          <li class="sub-nav-item active"><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+      </ul>
+      <ul class="nav navbar-nav sub-nav-list" id="set5">
+          <li class="sub-nav-item active"><a href="#">Link</a></li>
+          <li class="sub-nav-item"><a href="#">Link</a></li>
+      </ul>
+      <ul class="nav navbar-nav sub-nav-list" id="set6">
+          <li class="sub-nav-item active"><a href="#">Link</a></li>
+          <li class="sub-nav-item"><a href="#">Link</a></li>
+      </ul>
+      <ul class="nav navbar-nav sub-nav-list" id="set7">
+          <li class="sub-nav-item active"><a href="#">Link</a></li>
+          <li class="sub-nav-item"><a href="#">Link</a></li>
+      </ul>
   </div>
 </div>
 <!--End of Sub-navigation section-->
@@ -105,8 +108,8 @@
     <article>    
       <div class="module">
         <div class="module-header">
-          <div><h4>Yoga Classes</h4></div>
-          <div>
+          <div class="mhead"><h4>Yoga Classes</h4></div>
+          <div class="mpencil">
             <a class="pencil-sprite" href="#"></a>
           </div>      
         </div>
@@ -188,132 +191,176 @@
       </div>  
     </article>
 
-    <article>
-        
-        <div class="module">
-          <div class="module-header">
-            <h4>Yoga Classes</h4>
-            <div>
-              <a class="pencil" href="#"></a>
-            </div>      
+    <article>    
+      <div class="module">
+        <div class="module-header">
+          <div class="mhead"><h4>Yoga Classes</h4></div>
+          <div class="mpencil">
+            <a class="pencil-sprite" href="#"></a>
+          </div>      
+        </div>
+        <div class="module-body">
+          <div class="module-graph">
+            <p>Sales by month</p>
+            <img src="assets/graph.png" alt="...">
           </div>
-          <div class="module-body">
-            <div class="module-graph">
-              <p>Sales by month</p>
-              <img src="assets/graph.png" alt="...">
-            </div>
-            <div class="module-description">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Total Monthly</th>
+          <div class="module-description">
+            <table>
+              <thead>
+                <tr>
+                  <th>Total Monthly</th>
+                  <th>Current</th>
+                  <th>1 - Year</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sales</td>
+                  <td><strong>$30000</strong></td>
+                  <td><img src="assets/spark_line.png"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="module-more">
+            More..
+          </div>
+          <div class="module-extended">
+            <table class="table table-condensed"> 
+              <thead>
+                 <tr>
+                    <th>Price Name</th>
                     <th>Current</th>
-                    <th>1 - Year</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Sales</td>
-                    <td><strong>$30000</strong></td>
-                    <td><img src="assets/spark_line.png"></td>
-                  </tr>
+                    <th>1-Year</th>
+                 </tr>
+              </thead>
+              <tbody>
+                 <tr>
+                    <td>Monthly Unlimited</td>
+                    <td>$4260</td>
+                    <td><a class="graph-sprite" href="#" style="background-position: 0px 0px"></a></td>
+                 </tr>  
+                 <tr>
+                    <td>Student 1 month</td>
+                    <td>$1750</td>
+                    <td><a class="graph-sprite" href="#" style="background-position: 0px -18px"></a></td>
+                 </tr>
+                 <tr>
+                    <td>Single Visit</td>
+                    <td>$560</td>
+                    <td><a class="graph-sprite" href="#" style="background-position: 0px -36px"></a></td>
+                 </tr>
+                 <tr>
+                    <td>10 Class Pass</td>
+                    <td>$475</td>
+                    <td><a class="graph-sprite" href="#" style="background-position: 0px -54px"></a></td>
+                 </tr>
+                 <tr>
+                    <td>Student Single</td>
+                    <td>$445</td>
+                    <td><a class="graph-sprite" href="#" style="background-position: 0px -72px"></a></td>
+                 </tr>
+                 <tr>
+                    <td>20 Class Pass</td>
+                    <td>$230</td>
+                    <td><a class="graph-sprite" href="#" style="background-position: 0px -90px"></a></td>
+                 </tr>
+                 <tr>
+                    <td>20 Class Pass</td>
+                    <td>$230</td>
+                    <td><a class="graph-sprite" href="#" style="background-position: 0px -108px"></a></td>
+                 </tr>
                 </tbody>
-              </table>
-            </div>
-            <div class="module-more">
-              More..
-            </div>
-            <div class="module-extended">
-              <table class="table"> 
-                <thead>
-                   <tr>
-                      <th>All Programs</th>
-                      <th>Monthly Sales</th>
-                      <th>Monthly Attendance</th>
-                   </tr>
-                </thead>
-                
-                <tbody>
-                   <tr>
-                      <td>Open Practise</td>
-                      <td>$572.00</td>
-                      <td>276 visits</td>
-                   </tr>  
-                   <tr>
-                      <td>Yoga Videos</td>
-                      <td>#391.00</td>
-                      <td>82 views</td>
-                   </tr>
-                  </tbody>
-               </table>
-            </div>
+             </table>
           </div>
-        </div>  
-    
+        </div>
+      </div>  
     </article>
 
-    <article>
-        
-        <div class="module">
-          <div class="module-header">
-            <h4>Yoga Classes</h4>
-            <div>
-              <a class="pencil" href="#"></a>
-            </div>      
+    <article>    
+      <div class="module">
+        <div class="module-header">
+          <div class="mhead"><h4>Yoga Classes</h4></div>
+          <div class="mpencil">
+            <a class="pencil-sprite" href="#"></a>
+          </div>      
+        </div>
+        <div class="module-body">
+          <div class="module-graph">
+            <p>Sales by month</p>
+            <img src="assets/graph.png" alt="...">
           </div>
-          <div class="module-body">
-            <div class="module-graph">
-              <p>Sales by month</p>
-              <img src="assets/graph.png" alt="...">
-            </div>
-            <div class="module-description">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Total Monthly</th>
+          <div class="module-description">
+            <table>
+              <thead>
+                <tr>
+                  <th>Total Monthly</th>
+                  <th>Current</th>
+                  <th>1 - Year</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sales</td>
+                  <td><strong>$30000</strong></td>
+                  <td><img src="assets/spark_line.png"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="module-more">
+            More..
+          </div>
+          <div class="module-extended">
+            <table class="table table-condensed"> 
+              <thead>
+                 <tr>
+                    <th>Price Name</th>
                     <th>Current</th>
-                    <th>1 - Year</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Sales</td>
-                    <td><strong>$30000</strong></td>
-                    <td><img src="assets/spark_line.png"></td>
-                  </tr>
+                    <th>1-Year</th>
+                 </tr>
+              </thead>
+              <tbody>
+                 <tr>
+                    <td>Monthly Unlimited</td>
+                    <td>$4260</td>
+                    <td><a class="graph-sprite" href="#" style="background-position: 0px 0px"></a></td>
+                 </tr>  
+                 <tr>
+                    <td>Student 1 month</td>
+                    <td>$1750</td>
+                    <td><a class="graph-sprite" href="#" style="background-position: 0px -18px"></a></td>
+                 </tr>
+                 <tr>
+                    <td>Single Visit</td>
+                    <td>$560</td>
+                    <td><a class="graph-sprite" href="#" style="background-position: 0px -36px"></a></td>
+                 </tr>
+                 <tr>
+                    <td>10 Class Pass</td>
+                    <td>$475</td>
+                    <td><a class="graph-sprite" href="#" style="background-position: 0px -54px"></a></td>
+                 </tr>
+                 <tr>
+                    <td>Student Single</td>
+                    <td>$445</td>
+                    <td><a class="graph-sprite" href="#" style="background-position: 0px -72px"></a></td>
+                 </tr>
+                 <tr>
+                    <td>20 Class Pass</td>
+                    <td>$230</td>
+                    <td><a class="graph-sprite" href="#" style="background-position: 0px -90px"></a></td>
+                 </tr>
+                 <tr>
+                    <td>20 Class Pass</td>
+                    <td>$230</td>
+                    <td><a class="graph-sprite" href="#" style="background-position: 0px -108px"></a></td>
+                 </tr>
                 </tbody>
-              </table>
-            </div>
-            <div class="module-more">
-              More..
-            </div>
-            <div class="module-extended">
-              <table class="table"> 
-                <thead>
-                   <tr>
-                      <th>All Programs</th>
-                      <th>Monthly Sales</th>
-                      <th>Monthly Attendance</th>
-                   </tr>
-                </thead>
-                
-                <tbody>
-                   <tr>
-                      <td>Open Practise</td>
-                      <td>$572.00</td>
-                      <td>276 visits</td>
-                   </tr>  
-                   <tr>
-                      <td>Yoga Videos</td>
-                      <td>#391.00</td>
-                      <td>82 views</td>
-                   </tr>
-                  </tbody>
-               </table>
-            </div>
+             </table>
           </div>
-        </div>  
-    
+        </div>
+      </div>  
     </article>
 
 
