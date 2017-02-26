@@ -6,7 +6,7 @@ $(document).ready(function () {
         $(this).next('.module-extended').slideToggle(200);
     });
 
-    $(".module-new").click(function(){
+    $(".module-new-section").click(function(){
     $("#newprogmodal").modal('show');
 	});
 

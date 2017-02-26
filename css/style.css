@@ -24,17 +24,32 @@ header {
 }
 .nav-link {
 	margin-right: 0px !important;
-	border:none;
+	border: none;
+	color: #9BC58A;
+	font-weight: 600;
 }
 .nav-item {
 	border: 1px solid;
 }
-
+.nav-item .active  {
+	color: #000000;
+}
+.sub-nav-item a {
+	color: #000000;
+	font-weight: 600;
+}
 li.active {
 	border-bottom: none;
 }
+.table {
+	margin: 10px;
+}
+.navbar-toggle {
+	border-color: #000000;
+}
 
-.module-new {
+/*Modal Section*/
+.module-new-section {
 	padding: 20px;
 	text-align: center;
 }
@@ -43,72 +58,13 @@ button.module-new-prog {
 	width: 80px;
 	height: 80px;
 }
-/*.module {
-	background-color: #ffffff;
-	padding: 10px;
-}
-.module-area {
-	padding:20px;
-}
-.module-header {
-	position: relative;
-	overflow: hidden;
-}
-.module-header h3{
-	float: left;
-}
-.module-header a {
-	float: right;
-}
-.module-graph img {
-	margin: auto;
-}
-.module-description {
-	background-color: #FBFBF6;
-	font-weight: 300;
-}
-.module-description td{
-	padding-right: 10px;
-}
-.module-extended {
-	display: none;
-}
-.module-more {
-	cursor: pointer;
-}*/
 .form-control:focus {
   border-color: #419641;
   border-width: 2px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 255, 0, 0.6);
 }
-.pencil {
-	display: inline-block;
-	width: 18px;
-    height: 17px;
-    line-height: 17px;
-    background: url('assets/pencil_icons.png');
-    background-position: 0px 17px;
-}
-
-.pencil:hover {
-	display: inline-block;
-	width: 18px;
-    height: 17px;
-    line-height: 17px;
-    background: url('assets/pencil_icons.png');
-    background-position: 17px 0px;
-}
-
-.table {
-	margin: 10px;
-}
-.navbar-toggle {
-	border-color: #000000;
-}
-
-
+/*End of Modal Section*/
 /* modules section*/
-
 .module {
 	margin:10px;
 	display: inline-block;
@@ -139,7 +95,6 @@ button.module-new-prog {
 	width: 100%;
 }
 
-
 .module-description {
 	padding:10px;
 	background-color: #FBFBF6;
@@ -153,10 +108,57 @@ button.module-new-prog {
 .module-extended {
 	display: none;
 }
+.module-extended .table {
+	width: 100%;
+	margin: 0px;
+}
 .module-more {
 	cursor: pointer;
 	padding: 10px;
 }
+.pencil-sprite {
+	display: inline-block;
+	width: 18px;
+    height: 17px;
+    line-height: 17px;
+    background: url('assets/pencil_icons.png');
+    background-position: 0px 17px;
+}
 
-
-/* en dof module section*/
+.pencil-sprite:hover {
+	display: inline-block;
+	width: 18px;
+    height: 17px;
+    line-height: 17px;
+    background: url('assets/pencil_icons.png');
+    background-position: 0px 34px;
+}
+.graph-sprite {
+	display: inline-block;
+	width:	65px;
+	height: 18px;
+	line-height: 18px;
+	background: url('assets/spark_lines.png'); 
+}
+/*.abc .graph-sprite :nth-of-type(1) {
+	background-position: 0px 0px;
+}
+.abc .graph-sprite :nth-of-type(2) {
+	background-position: 0px -18px;
+}
+.abc .graph-sprite :nth-of-type(3) {
+	background-position: 0px -36px;
+}
+.abc .graph-sprite :nth-child(4) {
+	background-position: 0px -54px;
+}
+.abc>td.graph-sprite :nth-child(5) {
+	background-position: 0px -72px;
+}
+.abc>td.graph-sprite :nth-child(6) {
+	background-position: 0px -90px;
+}
+.abc>td.graph-sprite :nth-child(7) {
+	background-position: 0px -108px;
+}*/
+/* End of module section*/
