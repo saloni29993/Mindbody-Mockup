@@ -5,6 +5,13 @@ body {
 	font-size: 12px;
 	background-color: #E6E5DC;
 }
+h4, h6 {
+	font-weight: 700;
+}
+p {
+	font-size: 14px;
+	color:	#979A9A;
+}
 section {
 	background-color: #E6E5DC;
 	overflow: hidden;
@@ -27,7 +34,7 @@ header {
 		width: 100% !important;
 	}
 	.navigation {
-		position: static !important;
+		position: relative !important;
 	}
 	.navbar-nav {
 		margin: 75px 5px 0px 5px;
@@ -55,7 +62,7 @@ header {
 		width: 100% !important;
 	}
 	.navigation {
-		position: static !important;
+		position: relative !important;
 	}
 	.navbar-nav {
 		margin: 75px 5px 0px 5px;
@@ -75,6 +82,8 @@ header {
 	bottom: 0;
 	right: 0;
 }
+
+
 #sub-navigation {
 	background: #ffffff;
 }
@@ -91,21 +100,22 @@ header {
 .nav-item {
 	border: 1px solid #D7E0DC;
 	border-right: none;
+	/*box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);*/
 }
-.nav-item .active  {
-	color: #000000;
-	border-radius: 5px;
+li.nav-item.active  {
+	color: #000;
+	box-shadow: 5px 2px 2px -4px #888, -5px 2px 2px -5px #888;
 }
 .nav li a:focus,.nav li a:hover {
 	background: transparent;
 }
 .sub-nav-item a {
-	color: #D7E0DC;
+	color: #979A9A;
 	font-size: 14px;
 	font-weight: 600;
 }
-.sub-nav-item .active a {
-	color: #000000;
+li.sub-nav-item.active a {
+	color: #555;
 }
 li.active {
 	border-bottom: 1px solid #ffffff;
@@ -129,9 +139,9 @@ button.module-new-prog {
 	height: 80px;
 }
 .form-control:focus {
-  border-color: #419641;
-  border-width: 2px;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 255, 0, 0.6);
+  border-color: #9DC287;
+  border-width: 1px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(130, 224, 170, 0.7);
 }
 /*End of Modal Section*/
 /* modules section*/
@@ -149,7 +159,7 @@ button.module-new-prog {
 	position: relative;
 	overflow: hidden;
 }
-.module-header .mhead{
+.module-header h4{
 	float: left;
 }
 .module-header .mpencil {
@@ -163,29 +173,40 @@ button.module-new-prog {
 }
 
 .module-graph img{
-	display: block;
-	margin: auto;
+	width: 100%;
+	padding: 0px 10px;
 }
-
+.module-description table{
+	padding: 5px;
+	width: 100%;
+}
 .module-description {
 	padding:10px;
 	background-color: #FBFBF6;
 	font-weight: 300;
 }
+.module-description th{
+	font-size: 12px;
+	font-weight: 400;
+	color: #979A9A;
+	width: 33.33%;
+}
 .module-description td{
-	font-size: 0.8em;
-	width: 30%;
-	padding-right: 5px;
+	font-size: 14px;
+	width: 33.33%;
+	color: #979A9A;
 }
 .module-extended {
 	display: none;
+	padding: 10px;
 }
 .module-extended .table {
 	width: 100%;
-	margin: 0px;
+	margin: 0 auto;
 }
 .module-more {
 	cursor: pointer;
+	color: #979A9A;
 	padding: 10px;
 }
 .pencil-sprite {
