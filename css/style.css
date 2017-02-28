@@ -43,6 +43,9 @@ header {
 		border: 1px solid grey !important;
     	background: #ffffff;
 	}
+	#sub-navigation {
+		display: none;
+	}
 }
 @media screen and (min-width: 601px) and (max-width: 899px) {
 	.module-new-section {
@@ -70,6 +73,9 @@ header {
 	.nav-item {
 		border: 1px solid grey;
     	background: #ffffff;
+	}
+	#sub-navigation {
+		display: none;
 	}
 }
 
