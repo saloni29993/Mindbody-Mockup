@@ -34,7 +34,7 @@ header {
 		width: 100% !important;
 	}
 	.navigation {
-		position: relative !important;
+		position: absolute !important;
 	}
 	.navbar-nav {
 		margin: 75px 5px 0px 5px;
@@ -42,9 +42,6 @@ header {
 	.nav-item {
 		border: 1px solid grey !important;
     	background: #ffffff;
-	}
-	#sub-navigation {
-		display: none;
 	}
 }
 @media screen and (min-width: 601px) and (max-width: 899px) {
@@ -63,9 +60,10 @@ header {
 	}
 	button.module-new-prog {
 		width: 100% !important;
+    	cursor: pointer;
 	}
 	.navigation {
-		position: relative !important;
+		position: absolute !important;
 	}
 	.navbar-nav {
 		margin: 75px 5px 0px 5px;
@@ -73,9 +71,6 @@ header {
 	.nav-item {
 		border: 1px solid grey;
     	background: #ffffff;
-	}
-	#sub-navigation {
-		display: none;
 	}
 }
 
@@ -191,16 +186,20 @@ button.module-new-prog {
 	background-color: #FBFBF6;
 	font-weight: 300;
 }
-.module-description th{
+.module-description th , .module-extended th{
 	font-size: 12px;
 	font-weight: 400;
 	color: #979A9A;
 	width: 33.33%;
 }
-.module-description td{
+.module-description td {
 	font-size: 14px;
 	width: 33.33%;
 	color: #979A9A;
+}
+.text-bold {
+	color: #000000 !important;
+	font-weight: 700;
 }
 .module-extended {
 	display: none;
@@ -209,6 +208,16 @@ button.module-new-prog {
 .module-extended .table {
 	width: 100%;
 	margin: 0 auto;
+}
+.module-extended td {
+	color: #979A9A;
+	white-space : nowrap;
+  	overflow : hidden;
+  	text-overflow: ellipsis;
+}
+.text-bold-big {
+	color: #000000 !important;
+	font-weight: 700;
 }
 .module-more {
 	cursor: pointer;

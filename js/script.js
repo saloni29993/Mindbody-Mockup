@@ -14,7 +14,6 @@ $(document).ready(function () {
 
 	$('#set1').show();
 
-
 });
 
 $('#navigation a').on('click', function(e){
