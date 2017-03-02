@@ -1,15 +1,7 @@
 $(document).ready(function () {
     $(".module-extended").hide();
-    
-
-    $(".module-new-section").click(function(){
-    $("#newprogmodal").modal('show');
-	});
-
 	$('#sub-navigation ul').hide();
-
 	$('#set1').show();
-
 });
 
 $('#navigation a').on('touchstart click', function(e){
@@ -23,4 +15,9 @@ $(".module-more").on("click", function () {
         var txt = $(".module-extended").is(':visible') ? 'More' : 'Less';
         $(this).text(txt);
         $(this).prev('.module-extended').slideToggle(200);
+});
+
+$(".module-new-section").click(function(){
+	console.log("checking");
+    $("#newprogmodal").modal('show');
 });
