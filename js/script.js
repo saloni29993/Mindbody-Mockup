@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(".module-extended").hide();
-    $(".module-more").on("click", function () {
+    $(".module-more").on("touchstart click", function () {
         var txt = $(".module-extended").is(':visible') ? 'More' : 'Less';
         $(".module-more").text(txt);
         $(this).next('.module-extended').slideToggle(200);
@@ -16,7 +16,7 @@ $(document).ready(function () {
 
 });
 
-$('#navigation a').on('click', function(e){
+$('#navigation a').on('touchstart click', function(e){
 	e.preventDefault();
 	var submenu_id = $(this).attr('href');
 	$('#sub-navigation ul').hide();
