@@ -42,8 +42,7 @@ header {
 	.navbar-toggle {
 		border: 1px solid #000000;
 	}
-	.icon-bar
-	{	
+	.icon-bar {	
     	display:block;
     	width:22px;
     	height:2px;
@@ -86,6 +85,14 @@ header {
 	}
 }
 
+@media screen and (min-width: 1000px) {
+	#mobile-navigation {
+		display: none!important;
+	}
+}
+
+
+/*************Header styles***************/
 .logo {
 	position: absolute;
 	float: left;
@@ -101,7 +108,7 @@ header {
 .navbar-right {
 	background: linear-gradient(#FFFFFF, #E5E8E8);
 }
-.nav-link {
+.nav-link, .sub-nav-item a {
 	margin-right: 0px !important;
 	border: none;
 	color: #9BC58A;
@@ -111,30 +118,26 @@ header {
 .nav-item {
 	border: 1px solid #D7E0DC;
 	border-right: none;
-	/*box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);*/
 }
-li.nav-item.active  {
-	color: #000;
-	box-shadow: 5px 2px 2px -4px #888, -5px 2px 2px -5px #888;
+.nav-item.active  {
+	color: #000000;
+	box-shadow: 2px 2px 4px #888888, 0px 0px 1px #888888;
+	/*-webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.7);*/
 }
 .nav li a:focus,.nav li a:hover {
 	background: transparent;
 }
-.sub-nav-item a {
-	color: #979A9A;
-	font-size: 14px;
-	font-weight: 600;
-}
-li.sub-nav-item.active a {
-	color: #555;
+.sub-nav-item.active a {
+	color: #555555;
 }
 li.active {
 	border-bottom: 1px solid #ffffff;
 	background-color: #FFFFFF;
 }
-#mobile-navigation {
-	display: none !important;
-}
+
+/**********Header styles End**************/
+
+
 .table {
 	margin: 10px;
 }
@@ -144,9 +147,9 @@ li.active {
 	text-align: center;
 }
 button.module-new-prog {
-	background-color: #9BC58A;
 	width: 80px;
 	height: 80px;
+	background: linear-gradient(#9ACD32, #9BC58A);
 }
 .form-control:focus {
   border-color: #9DC287;
@@ -187,19 +190,19 @@ button.module-new-prog {
 	padding: 0px 10px;
 }
 .module-description table{
-	padding: 5px;
 	width: 100%;
 }
 .module-description {
 	padding:10px;
 	background-color: #FBFBF6;
 	font-weight: 300;
+	border-top: 1px solid #E8F3EE;
+	border-bottom: 1px solid #E8F3EE;
 }
-.module-description th , .module-extended th{
+.column-header{
 	font-size: 12px;
-	font-weight: 400;
+	font-weight: 600;
 	color: #979A9A;
-	width: 33.33%;
 }
 .module-description td {
 	font-size: 14px;
@@ -212,26 +215,24 @@ button.module-new-prog {
 }
 .module-extended {
 	display: none;
-	padding: 10px;
+	padding: 10px 10px;
 }
 .module-extended .table {
 	width: 100%;
-	margin: 0 auto;
+	margin: 0 auto; 
 }
 .module-extended td {
 	color: #979A9A;
 	white-space : nowrap;
   	overflow : hidden;
   	text-overflow: ellipsis;
-}
-.text-bold-big {
-	color: #000000 !important;
-	font-weight: 700;
+  	width: 30%;
+  	padding: 0px 5px !important;
 }
 .module-more {
 	cursor: pointer;
 	color: #979A9A;
-	padding: 10px;
+	padding: 5px 10px;
 }
 .pencil-sprite {
 	display: inline-block;
@@ -247,10 +248,6 @@ button.module-new-prog {
 }
 
 .pencil-sprite:hover {
-	display: inline-block;
-	width: 20px;
-    height: 20px;
-    line-height: 17px;
     background: url('assets/pencil_icons.png');
     background-position: 0px 34px;
     border: 1px solid #000000;
@@ -262,25 +259,29 @@ button.module-new-prog {
 	line-height: 18px;
 	background: url('assets/spark_lines.png'); 
 }
-/*.abc .graph-sprite :nth-of-type(1) {
-	background-position: 0px 0px;
+.text-bold-big {
+	color: #000000 !important;
+	font-weight: 700;
+	font-size: 16px;
 }
-.abc .graph-sprite :nth-of-type(2) {
-	background-position: 0px -18px;
+.text-small {
+	font-size: 12px;
 }
-.abc .graph-sprite :nth-of-type(3) {
-	background-position: 0px -36px;
+.column-header-big {
+	font-size: 14px;
 }
-.abc .graph-sprite :nth-child(4) {
-	background-position: 0px -54px;
+
+.no-styling {
+	font-weight: 100;
+	font-size: 12px;
 }
-.abc>td.graph-sprite :nth-child(5) {
-	background-position: 0px -72px;
+
+.table-info td {
+	font-weight: 600;
+	font-size: 16px;
 }
-.abc>td.graph-sprite :nth-child(6) {
-	background-position: 0px -90px;
+
+.table-info th {
+	font-weight: 600;
+	font-size: 14px;
 }
-.abc>td.graph-sprite :nth-child(7) {
-	background-position: 0px -108px;
-}*/
-/* End of module section*/

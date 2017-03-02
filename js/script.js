@@ -1,10 +1,6 @@
 $(document).ready(function () {
     $(".module-extended").hide();
-    $(".module-more").on("touchstart click", function () {
-        var txt = $(".module-extended").is(':visible') ? 'More' : 'Less';
-        $(".module-more").text(txt);
-        $(this).next('.module-extended').slideToggle(200);
-    });
+    
 
     $(".module-new-section").click(function(){
     $("#newprogmodal").modal('show');
@@ -21,4 +17,10 @@ $('#navigation a').on('touchstart click', function(e){
 	var submenu_id = $(this).attr('href');
 	$('#sub-navigation ul').hide();
 	$(submenu_id).show();
+});
+
+$(".module-more").on("click", function () {
+        var txt = $(".module-extended").is(':visible') ? 'More' : 'Less';
+        $(this).text(txt);
+        $(this).prev('.module-extended').slideToggle(200);
 });
