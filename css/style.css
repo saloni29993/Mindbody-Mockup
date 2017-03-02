@@ -22,6 +22,7 @@ header {
 	background-color: #E8F3EE;
 }
 
+/* for mobile */
 @media only screen and (max-width:480px) {
 	.module-section, .module-new-section {
 		width: 100%;
@@ -51,6 +52,7 @@ header {
 	}
 
 }
+/* for tablets */
 @media screen and (min-width: 601px) and (max-width: 899px) {
 	.module-new-section {
 		width: 100%;
@@ -84,7 +86,7 @@ header {
     	border:1px solid #444;
 	}
 }
-
+/* for desktop */
 @media screen and (min-width: 1000px) {
 	#mobile-navigation {
 		display: none!important;
@@ -122,7 +124,6 @@ header {
 .nav-item.active  {
 	color: #000000;
 	box-shadow: 2px 2px 4px #888888, 0px 0px 1px #888888;
-	/*-webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.7);*/
 }
 .nav li a:focus,.nav li a:hover {
 	background: transparent;
@@ -135,13 +136,10 @@ li.active {
 	background-color: #FFFFFF;
 }
 
-/**********Header styles End**************/
+/* Header styles End */
 
 
-.table {
-	margin: 10px;
-}
-/*Modal Section*/
+/* Modal Section */
 .module-new-section {
 	padding: 20px;
 	text-align: center;
@@ -149,7 +147,7 @@ li.active {
 button.module-new-prog {
 	width: 80px;
 	height: 80px;
-	background: linear-gradient(#9ACD32, #9BC58A);
+	background: linear-gradient(#9CC68B, #9BC58A);
 }
 .form-control:focus {
   border-color: #9DC287;
@@ -157,7 +155,8 @@ button.module-new-prog {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(130, 224, 170, 0.7);
 }
 /*End of Modal Section*/
-/* modules section*/
+
+/* Main Content area Modules section*/
 .module {
 	margin:10px;
 	display: inline-block;
@@ -165,6 +164,7 @@ button.module-new-prog {
 	width: 31%;
 	background-color: #ffffff;
 	border-radius: 5px;
+	box-shadow: 0px 1px 1px #888888;
 }
 
 .module-header {
@@ -199,7 +199,7 @@ button.module-new-prog {
 	border-top: 1px solid #E8F3EE;
 	border-bottom: 1px solid #E8F3EE;
 }
-.column-header{
+table th{
 	font-size: 12px;
 	font-weight: 600;
 	color: #979A9A;
@@ -259,6 +259,8 @@ button.module-new-prog {
 	line-height: 18px;
 	background: url('assets/spark_lines.png'); 
 }
+
+/* Bottom Table */
 .text-bold-big {
 	color: #000000 !important;
 	font-weight: 700;
@@ -267,9 +269,7 @@ button.module-new-prog {
 .text-small {
 	font-size: 12px;
 }
-.column-header-big {
-	font-size: 14px;
-}
+
 
 .no-styling {
 	font-weight: 100;
@@ -285,3 +285,8 @@ button.module-new-prog {
 	font-weight: 600;
 	font-size: 14px;
 }
+
+.table-info {
+	margin: 15px;
+}
+/* end of bottom table */
